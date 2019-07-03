@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VuF-qN-27z">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="VZb-aU-uHo">
+            <objects>
+                <navigationController id="VuF-qN-27z" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="g8B-kd-scI">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="JVm-Tj-8EQ" kind="relationship" relationship="rootViewController" id="MUm-zE-kNs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wl7-gd-mLx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1924" y="33"/>
+        </scene>
+        <!--Launch View Controller-->
+        <scene sceneID="yMX-IF-446">
+            <objects>
+                <viewController id="JVm-Tj-8EQ" customClass="LaunchViewController" customModule="RunnersOfTheSun" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TGP-aO-qFz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Runners of the Sun" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXL-ei-eL7">
+                                <rect key="frame" x="33.666666666666657" y="309.66666666666669" width="308" height="56"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;--------------------&lt;&lt;&lt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6JS-zW-RG2">
+                                <rect key="frame" x="90.000000000000014" y="613" width="195.33333333333337" height="21"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" allowsDirectInteraction="YES"/>
+                                </accessibility>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="UCd-Dl-aPO" appends="YES" id="3iu-ef-jRW"/>
+                                    <outletCollection property="gestureRecognizers" destination="UCd-Dl-aPO" appends="YES" id="hWh-qq-21v"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oracle Deck" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6g-vX-VGa">
+                                <rect key="frame" x="106" y="381.66666666666669" width="163" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="163" id="5gd-ik-G78"/>
+                                    <constraint firstAttribute="height" constant="33" id="8Sx-Fm-PdS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.84901560279999999" blue="0.87236298290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="w6g-vX-VGa" firstAttribute="centerX" secondItem="TGP-aO-qFz" secondAttribute="centerX" id="Dd8-2u-vAg"/>
+                            <constraint firstItem="w6g-vX-VGa" firstAttribute="top" secondItem="vXL-ei-eL7" secondAttribute="bottom" constant="16" id="Kbr-Eh-Pqt"/>
+                            <constraint firstItem="B58-FY-w3N" firstAttribute="centerY" secondItem="6JS-zW-RG2" secondAttribute="top" constant="-180" id="dmA-Y3-t3h"/>
+                            <constraint firstItem="vXL-ei-eL7" firstAttribute="centerX" secondItem="TGP-aO-qFz" secondAttribute="centerX" id="ju6-QB-x4N"/>
+                            <constraint firstAttribute="centerY" secondItem="vXL-ei-eL7" secondAttribute="bottom" constant="40.333335876464844" id="pSO-mK-O32"/>
+                            <constraint firstItem="6JS-zW-RG2" firstAttribute="centerX" secondItem="TGP-aO-qFz" secondAttribute="centerX" id="uuT-Ic-DJ1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="B58-FY-w3N"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="i57-vq-a60"/>
+                    <connections>
+                        <outlet property="arrow" destination="6JS-zW-RG2" id="yM3-hh-lKi"/>
+                        <outlet property="oracleDeckLabel" destination="w6g-vX-VGa" id="wsE-ah-g0A"/>
+                        <outlet property="runnersLabel" destination="vXL-ei-eL7" id="ePG-pI-6ep"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Edj-H9-YZi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="UCd-Dl-aPO" customClass="SwipeFr">
+                    <connections>
+                        <outlet property="delegate" destination="6JS-zW-RG2" id="hHQ-Xc-w3p"/>
+                        <segue destination="FlB-tk-rr1" kind="presentation" customClass="SwipeFromLeftSegue" customModule="RunnersOfTheSun" customModuleProvider="target" id="g5S-EF-6aT"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-986.39999999999998" y="32.512315270935964"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Iqf-Hi-Wgp">
+            <objects>
+                <navigationController id="FlB-tk-rr1" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EM1-kF-rnx">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="lKk-Dz-Vyt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c9y-Dg-0RS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-108" y="33"/>
+        </scene>
+        <!--ViewController-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="RunnersOfTheSun" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="CardView" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hM4-rZ-dVN" userLabel="card6">
+                                <rect key="frame" x="89" y="348" width="197" height="340"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hM4-rZ-dVN" secondAttribute="height" multiplier="2.75:4.75" id="T9Q-bu-cMv"/>
+                                </constraints>
+                                <state key="normal" image="defaultBack"/>
+                                <connections>
+                                    <action selector="flipNextCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AGr-zM-33V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBQ-eh-4L9" userLabel="card5">
+                                <rect key="frame" x="89" y="348" width="197" height="340"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nBQ-eh-4L9" secondAttribute="height" multiplier="2.75:4.75" id="TJO-Cb-Npb"/>
+                                </constraints>
+                                <state key="normal" image="defaultBack"/>
+                                <connections>
+                                    <action selector="flipNextCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lDW-Ci-E5A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYs-o0-pVn" userLabel="card4">
+                                <rect key="frame" x="89" y="348" width="197" height="340"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bYs-o0-pVn" secondAttribute="height" multiplier="2.75:4.75" id="8MJ-Eg-mPk"/>
+                                </constraints>
+                                <state key="normal" image="defaultBack"/>
+                                <connections>
+                                    <action selector="flipNextCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nYE-jk-CjL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ntd-zx-uva" userLabel="card3">
+                                <rect key="frame" x="89" y="348" width="197" height="340"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ntd-zx-uva" secondAttribute="height" multiplier="2.75:4.75" id="tjm-P0-lDT"/>
+                                </constraints>
+                                <state key="normal" image="defaultBack"/>
+                                <connections>
+                                    <action selector="flipNextCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BtC-fk-zIl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebg-bU-7g8" userLabel="card2">
+                                <rect key="frame" x="89" y="348" width="197" height="340"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ebg-bU-7g8" secondAttribute="height" multiplier="2.75:4.75" id="5PB-Xy-WVB"/>
+                                </constraints>
+                                <state key="normal" image="defaultBack"/>
+                                <connections>
+                                    <action selector="flipNextCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Pf-dh-vWx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a35-MB-51H" userLabel="card1">
+                                <rect key="frame" x="89" y="348" width="197" height="340"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="a35-MB-51H" secondAttribute="height" multiplier="2.75:4.75" id="RUm-Hl-v02"/>
+                                </constraints>
+                                <state key="normal" image="defaultBack"/>
+                                <connections>
+                                    <action selector="flipNextCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uf3-l8-USD"/>
+                                    <outletCollection property="gestureRecognizers" destination="dSL-m6-hi9" appends="YES" id="3lc-5K-lHs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99607843137254903" green="0.84705882352941175" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="hM4-rZ-dVN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="260" id="3aK-Ep-4mX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bYs-o0-pVn" secondAttribute="bottom" constant="90" id="8Wa-0J-m9R"/>
+                            <constraint firstItem="bYs-o0-pVn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="260" id="9zZ-ud-KSB"/>
+                            <constraint firstItem="a35-MB-51H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="260" id="AHW-ki-SAA"/>
+                            <constraint firstItem="hM4-rZ-dVN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ax4-7z-5EU"/>
+                            <constraint firstItem="ebg-bU-7g8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FQ0-sx-5CB"/>
+                            <constraint firstItem="Ntd-zx-uva" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HAV-vs-Use"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nBQ-eh-4L9" secondAttribute="bottom" constant="90" id="HMZ-va-r52"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ebg-bU-7g8" secondAttribute="bottom" constant="90" id="M0W-2Y-GUg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ntd-zx-uva" secondAttribute="bottom" constant="90" id="NtA-fA-SSG"/>
+                            <constraint firstItem="nBQ-eh-4L9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="260" id="Zsh-FH-0L8"/>
+                            <constraint firstItem="nBQ-eh-4L9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bN7-s6-KG4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hM4-rZ-dVN" secondAttribute="bottom" constant="90" id="cWP-dp-wVD"/>
+                            <constraint firstItem="Ntd-zx-uva" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="260" id="cjH-6d-PlH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="a35-MB-51H" secondAttribute="bottom" constant="90" id="kOR-88-QVZ"/>
+                            <constraint firstItem="ebg-bU-7g8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="260" id="n0F-6X-fhT"/>
+                            <constraint firstItem="bYs-o0-pVn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pKx-hl-eDn"/>
+                            <constraint firstItem="a35-MB-51H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vs4-bK-qcG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GZM-Di-qBX"/>
+                    <connections>
+                        <outlet property="card1" destination="a35-MB-51H" id="UQF-Ih-DUN"/>
+                        <outlet property="card2" destination="ebg-bU-7g8" id="wYC-1P-2o9"/>
+                        <outlet property="card3" destination="Ntd-zx-uva" id="QPV-jC-Fyc"/>
+                        <outlet property="card4" destination="bYs-o0-pVn" id="xaL-L6-vHs"/>
+                        <outlet property="card5" destination="nBQ-eh-4L9" id="Tb6-vD-Fch"/>
+                        <outlet property="card6" destination="hM4-rZ-dVN" id="TRF-Tg-zEZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="dSL-m6-hi9" userLabel="beginShuffleTapGestureRecognizer">
+                    <connections>
+                        <action selector="beginShuffle:" destination="BYZ-38-t0r" id="g8P-qN-zUZ"/>
+                        <outlet property="delegate" destination="a35-MB-51H" id="e8P-5w-kdq"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="604" y="42"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="defaultBack" width="1794" height="2994"/>
+    </resources>
+</document>
